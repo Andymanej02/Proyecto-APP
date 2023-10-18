@@ -1,7 +1,6 @@
 import React from 'react';
 import Indio from '../../assets/indio.jpg';
 import Rio from '../../assets/rio.jpg';
-import NavBar from '../../components/NavBar';
 import Bar from '../../components/Bar';
 
 const customStyles = {
@@ -27,7 +26,7 @@ const customStyles = {
         marginRight: "2rem",
     },
     img: {
-        width: "300%",
+        width: "150%",
         height: "auto",
     },
     section: {

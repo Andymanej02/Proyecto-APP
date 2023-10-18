@@ -1,7 +1,5 @@
 import React from 'react';
 import style from "./style.module.css"
-import NavBar from '../../components/NavBar';
-import Bar from '../../components/Bar';
 import fondoPantalla from '../../assets/vista-superior-manos-sosteniendo-telefono-inteligente.jpg';
 
 export const LoginPage = () => {
