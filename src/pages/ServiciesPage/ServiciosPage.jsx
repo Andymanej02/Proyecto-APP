@@ -13,6 +13,7 @@ import Image9 from '../../assets/image9.jpeg';
 import Image10 from '../../assets/image10.jpeg'; 
 import Image11 from '../../assets/image11.jpeg'; 
 import Image12 from '../../assets/image12.jpeg'; 
+import { DashboardNav } from '../../components/DashboardNav';
 
 const servicesData = [
     {
@@ -93,7 +94,7 @@ const customStyles = {
         textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)", 
     },
     section: {
-        padding: "1rem",
+        padding: "5rem 0 0 0",
         marginBottom: "2rem",
         textAlign: "center",
     },
@@ -117,7 +118,7 @@ export const ServiciosPage = () => {
 
     return (
         <>
-            <Bar />
+            <DashboardNav/>
             <section style={customStyles.section}>
                 <div style={customStyles.container}>
                     <h1 style={customStyles.h1}>SERVICIOS DE TURISMO EN MEDELLÍN</h1>

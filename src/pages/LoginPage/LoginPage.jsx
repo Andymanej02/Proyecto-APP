@@ -9,6 +9,7 @@ export const LoginPage = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     };
+    
 
     return (
         <>
@@ -30,7 +31,7 @@ export const LoginPage = () => {
                             <img src="./assets/password-lock-svgrepo-com.svg" alt="password" />
                             <input type="password" placeholder="Password" />
                         </div>
-                        <button className={style.btn}>Login</button>
+                        <button className={style.btn} >Login</button>
                     </div>
                 </div>
             </div>

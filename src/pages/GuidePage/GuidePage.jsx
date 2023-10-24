@@ -5,6 +5,8 @@ import Map from '../../assets/Map.png'
 
 
 import TuImagen from '../../assets/Map.png';
+import { DashboardNav } from '../../components/DashboardNav';
+import { MapComponent } from '../../components/MapComponent';
 
 const customStyles = {
     container: {
@@ -27,7 +29,7 @@ const customStyles = {
         marginBottom: "1rem",
     },
     section: {
-        padding: "1rem",
+        padding: "4rem 0 0 0",
         marginBottom: "2rem",
         textAlign: "center",
     },
@@ -40,7 +42,9 @@ const customStyles = {
 export const GuidePage = () => {
     return (
         <>
-            <Bar />
+            <header>
+            <DashboardNav/>
+            </header>
             <section style={customStyles.section}>
                 <div style={customStyles.container}>
                     <h1 style={customStyles.h1}>¿Cómo hacer turismo sostenible?</h1>
@@ -49,11 +53,9 @@ export const GuidePage = () => {
             </section>
             
             
-            <section style={customStyles.section}>
-                <div style={customStyles.container}>
-                    <img src={TuImagen} alt="Tu Imagen" style={customStyles.img} />
-                </div>
-            </section>
+            <div style={customStyles.container}>
+                    <MapComponent/>
+                </div>  
             
            
             <section style={customStyles.section}>

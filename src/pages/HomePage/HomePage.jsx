@@ -2,6 +2,7 @@ import React from 'react';
 import Indio from '../../assets/indio.jpg';
 import Rio from '../../assets/rio.jpg';
 import Bar from '../../components/Bar';
+import { DashboardNav } from '../../components/DashboardNav';
 
 const customStyles = {
     container: {
@@ -39,7 +40,7 @@ const customStyles = {
 export const HomePage = () => {
     return (
         <div>
-            <Bar />
+            <DashboardNav />
             <section style={customStyles.section}>
                 <div style={customStyles.container}>
                     <div>
