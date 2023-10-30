@@ -35,6 +35,7 @@ const customStyles = {
         marginBottom: "2rem",
         textAlign: "center",
     },
+    /* */
 };
 
 export const HomePage = () => {
