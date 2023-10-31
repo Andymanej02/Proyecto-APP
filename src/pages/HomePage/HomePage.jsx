@@ -46,7 +46,7 @@ export const HomePage = () => {
                 <div style={customStyles.container}>
                     <div>
                         <h1 style={customStyles.h1}>En Colombia el turismo es sostenible</h1>
-                        <h2 style={customStyles.h2}>Aprende a cómo turistear en Colombia de una manera sostenible y segura.</h2>
+                        <h2 style={customStyles.h2}>¡Ven y siente la emoción de explorar la Ciudad de la Eterna Primavera, un destino turístico que te cautivará en cada paso!"</h2>
                     </div>
                     <div>
                         <img src={Indio} alt="Turismo Sostenible en Colombia" style={customStyles.img} />
@@ -59,8 +59,10 @@ export const HomePage = () => {
                     <div>
                         <h2 style={customStyles.h2}>Explora los destinos turísticos de Medellín y disfruta de su belleza natural.</h2>
                         <p style={customStyles.h2}>
-                            Descubre la magia de la Ciudad de la Eterna Primavera. Recorre sus calles llenas de historia,
-                            disfruta de la deliciosa comida local y embárcate en aventuras inolvidables.
+                        Medellín ofrece a los visitantes una experiencia única gracias a su cálido clima, rica cultura y hermosos paisajes. 
+                        Con una hospitalidad inigualable, esta ciudad te permite sumergirte en la historia, descubrir la diversidad culinaria 
+                        y explorar su entorno natural. Venir a turistear a Medellín es una oportunidad de vivir momentos memorables y llevar 
+                        contigo recuerdos inolvidables.
                         </p>
                     </div>
                 </div>
