@@ -99,7 +99,7 @@ const customStyles = {
         textAlign: "center",
     },
     card: {
-        width: "350px",
+        width: "300px",
         margin: "1rem",
     },
     media: {
