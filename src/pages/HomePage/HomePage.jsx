@@ -1,6 +1,6 @@
 import React from 'react';
-import Indio from '../../assets/indio.jpg';
-import Rio from '../../assets/rio.jpg';
+import Indio from '../../assets/image6.jpeg';
+import Rio from '../../assets/image8.jpeg';
 import Bar from '../../components/Bar';
 import { DashboardNav } from '../../components/DashboardNav';
 
@@ -55,9 +55,7 @@ export const HomePage = () => {
             </section>
             <section style={customStyles.section}>
                 <div style={customStyles.container}>
-                    <div>
-                        <img src={Rio} alt="Ríos de Colombia" style={customStyles.img} />
-                    </div>
+                    
                     <div>
                         <h2 style={customStyles.h2}>Explora los destinos turísticos de Medellín y disfruta de su belleza natural.</h2>
                         <p style={customStyles.h2}>
