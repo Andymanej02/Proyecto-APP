@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importa el componente Link
 import style from "./style.module.css";
 import fondoPantalla from '../../assets/vista-superior-manos-sosteniendo-telefono-inteligente.jpg';
 import userIcon from '../../assets/user.svg';
 import passwordIcon from '../../assets/password.svg';
-import logo from '../../components/Logo.png'; // Reemplaza 'logo.png' con la ruta correcta de tu logo
+import logo from '../../components/Logo.png'; 
 
 export const LoginPage = () => {
     const backgroundStyle = {
@@ -19,7 +20,7 @@ export const LoginPage = () => {
                 <div className={style.cardmain}>
                     <div className={style.cardinfo}>
                         <div className={style.logo}>
-                            <img src={logo} alt="Logo" style={{ width: '100px' }} /> {/* Ajusta el tamaño aquí */}
+                            <img src={logo} alt="Logo" style={{ width: '100px' }} />
                         </div>
                         <h1>Iniciar sesión</h1>
                         <p style={{ fontSize: '14px', color: '#549bb9' }}>
@@ -36,7 +37,8 @@ export const LoginPage = () => {
                             <input type="password" placeholder="Password" />
                         </div>
                         <button className={`${style.btn} ${style['btn-square']}`}>Login</button>
-                        <button className={`${style['btn-register']} ${style['btn-square']}`}>Registrarse</button> {/* Agrega el botón de Registrarse */}
+                        {/* Agrega el enlace al botón de "Registrarse" */}
+                        <Link to="/register" className={`${style['btn-register']} ${style['btn-square']}`}>Registrarse</Link>
                     </div>
                 </div>
             </div>

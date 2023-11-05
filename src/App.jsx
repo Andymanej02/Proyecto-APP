@@ -1,30 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage/HomePage';
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import LoginPage from './pages/LoginPage/LoginPage';
-import './App.css';
-
+import RegisterPage from './pages/RegisterPage/RegisterPage';
 import ServiciosPage from './pages/ServiciesPage/ServiciosPage';
 import { GuidePage } from './pages/GuidePage/GuidePage';
-import Footer from './components/Footer'; // Ajusta la ruta según la ubicación de Footer.jsx
-
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/servicios" element={<ServiciosPage />} />
-          <Route path="/guide" element={<GuidePage />} />
-          <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/login" element={<LoginPage />} />
-        </Routes>
-      </Router>
-
-      <Footer /> 
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/servicios" element={<ServiciosPage />} />
+        <Route path="/guide" element={<GuidePage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
