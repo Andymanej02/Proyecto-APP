@@ -19,7 +19,7 @@ header{
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 .navigation a::after{
     content: '';
@@ -55,7 +55,7 @@ header{
     margin-left: 40px;
 }
 .navigation .btnLgn-popup:hover{
-    background:rgb(45, 173, 10);
+    background:rgb(0, 0, 0);
 }
 
 .logo {

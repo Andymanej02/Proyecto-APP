@@ -1,6 +1,8 @@
 import React from 'react';
 import style from "./style.module.css"
 import fondoPantalla from '../../assets/vista-superior-manos-sosteniendo-telefono-inteligente.jpg';
+import userIcon from '../../assets/user.svg'; // Importa la imagen del usuario
+import passwordIcon from '../../assets/password.svg'; // Importa la imagen del candado
 
 export const LoginPage = () => {
     const backgroundStyle = {
@@ -24,11 +26,11 @@ export const LoginPage = () => {
                     </div>
                     <div className={style.cardform}>
                         <div className={style.input_user}>
-                            <img src="./assets/user-svgrepo-com.svg" alt="user" />
+                            <img src={userIcon} alt="user" /> {/* Usa la imagen del usuario importada */}
                             <input type="text" placeholder="Username" />
                         </div>
                         <div className={style.input_pass}>
-                            <img src="./assets/password-lock-svgrepo-com.svg" alt="password" />
+                            <img src={passwordIcon} alt="password" /> {/* Usa la imagen del candado importada */}
                             <input type="password" placeholder="Password" />
                         </div>
                         <button className={style.btn} >Login</button>
@@ -40,3 +42,4 @@ export const LoginPage = () => {
 }
 
 export default LoginPage;
+
