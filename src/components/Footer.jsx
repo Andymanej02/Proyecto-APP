@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import backgroundImage from '../assets/image3.jpeg';
+import backgroundImage from '../assets/vista-superior-manos-sosteniendo-telefono-inteligente.jpg';
 
 const footerStyle = {
   display: 'flex',

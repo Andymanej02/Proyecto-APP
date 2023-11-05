@@ -40,10 +40,10 @@ label {
     font-size: 16px;
     color: #000000;
     background-color: #fff;
-    padding: 1px 1px;
-    border-radius: 2px;
+    padding: 5px; /* Aumenta el espacio alrededor del texto */
+    border-radius: 5px; /* Da un aspecto más redondeado */
     text-align: center;
-    width: 160px;
+    width: 200px; /* Ancho uniforme para todos los campos */
     position: relative;
     cursor: pointer;
 }
@@ -64,34 +64,35 @@ label:hover {
     }
 }
 
-@keyframes moveText {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(5px);
-    }
-}
-
 input[type="text"],
 input[type="password"] {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 200px;
+    width: 210px;
+    font-style: italic;
+}
+
+/* Estilo diferente para el campo de correo (más pequeño) */
+input[type="email"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 210px; /* Hazlo más pequeño según tus preferencias */
     font-style: italic;
 }
 
 .btn {
     display: block;
-    margin: 10px auto;
-    padding: 5px 10px;
+    margin: 30px auto;
+    padding: 10px 20px; /* Aumenta el tamaño del botón */
     background-color: rgb(0, 104, 189);
     color: #fff;
     border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 50%; /* Hace que el botón sea circular */
+    font-size: 16px; /* Aumenta el tamaño de la fuente */
     cursor: pointer;
+    font-family: 'Comic Sans MS', cursive; /* Aplica la fuente 'Comic Sans MS' */
 }
 
 .btn:hover {
@@ -102,10 +103,4 @@ input[type="password"] {
 .registerButton {
     background-color: rgb(0, 104, 189);
     /* Otros estilos... */
-}
-
-.btn-square {
-    width: 80px;
-    height: 20px;
-    border-radius: 0;
 }

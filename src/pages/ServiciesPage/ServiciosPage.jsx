@@ -15,6 +15,7 @@ import Image11 from '../../assets/image11.jpeg';
 import Image12 from '../../assets/image12.jpeg'; 
 import { DashboardNav } from '../../components/DashboardNav';
 
+
 const servicesData = [
     {
         name: 'Pueblo de Guatape',

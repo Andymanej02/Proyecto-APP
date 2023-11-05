@@ -1,8 +1,7 @@
 import React from 'react';
 import Indio from '../../assets/image6.jpeg';
-import Rio from '../../assets/image8.jpeg';
-import Bar from '../../components/Bar';
 import { DashboardNav } from '../../components/DashboardNav';
+
 
 const customStyles = {
     container: {
