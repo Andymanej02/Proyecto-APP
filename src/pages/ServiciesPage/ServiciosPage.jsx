@@ -29,6 +29,7 @@ import Image10 from '../../assets/image10.jpeg';
 import Image11 from '../../assets/image11.jpeg';
 import Image12 from '../../assets/image12.jpeg';
 import { DashboardNav } from '../../components/DashboardNav';
+import Footer from '../../components/Footer';
 
 const servicesData = [
     {
@@ -121,7 +122,12 @@ const customStyles = {
         textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)',
     },
     section: {
-        padding: '5rem 0 0 0',
+        padding: '5rem 5rem 0rem 5rem',
+        marginBottom: '2rem',
+        textAlign: 'center',
+    },
+    sectionProducts: {
+        padding: '0rem 5rem 0rem 5rem',
         marginBottom: '2rem',
         textAlign: 'center',
     },
@@ -184,7 +190,7 @@ export const ServiciosPage = () => {
             </section>
 
             {rows.map((row, rowIndex) => (
-                <section key={rowIndex} style={customStyles.section}>
+                <section key={rowIndex} style={customStyles.sectionProducts}>
                     <Grid container spacing={3} justifyContent="center">
                         {row.map((service, index) => (
                             <Grid item xs={12} sm={6} md={3} key={index}>
@@ -235,6 +241,9 @@ export const ServiciosPage = () => {
                     </Grid>
                 </section>
             ))}
+
+            <Footer/>
+
         </>
     );
 };

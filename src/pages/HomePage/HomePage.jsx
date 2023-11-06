@@ -6,6 +6,7 @@ import Image1 from '../../assets/1.jpeg';
 import Image2 from '../../assets/5.jpeg';
 import Image3 from '../../assets/3.jpeg';
 import { DashboardNav } from '../../components/DashboardNav';
+import Footer from '../../components/Footer';
 
 
 const logoImage = '../../assets/logo.png';
@@ -33,12 +34,18 @@ const customStyles = {
     img: {
         maxWidth: "100%",
         height: "auto",
+        marginTop: "1rem", 
     },
     section: {
-        padding: "3rem",
-        marginBottom: "1rem",
+        padding: "6rem  6rem 0rem 6rem",
         textAlign: "center",
     },
+
+    sectionText: {
+        padding: "2rem  6rem 1rem 6rem",
+        textAlign: "center",
+    },
+
     carouselContainer: {
         display: "flex",
         flexDirection: "column",
@@ -86,10 +93,7 @@ export const HomePage = () => {
             <DashboardNav />
             <section style={customStyles.section}>
                 <div style={customStyles.container}>
-                    <div>
-                        
-                        <img src={logoImage} alt="Logo" style={customStyles.img} />
-                    </div>
+                    
                     <div>
                         <h1 style={customStyles.h1}>En Colombia el turismo es sostenible</h1>
                         <h2 style={customStyles.h2}>
@@ -97,11 +101,11 @@ export const HomePage = () => {
                         </h2>
                     </div>
                     <div>
-                        <img src={Indio} alt="Turismo Sostenible en Colombia" style={customStyles.img} />
+                        <img src={Indio} alt="Turismo Sostenible en Colombia" style ={customStyles.img} />
                     </div>
                 </div>
             </section>
-            <section style={customStyles.section}>
+            <section style={customStyles.sectionText}>
                 <div style={customStyles.container}>
                     <div>
                         <h2 style={customStyles.h2}>
@@ -142,7 +146,11 @@ export const HomePage = () => {
             <p style={customStyles.info}>
                 Medellín te espera con su belleza natural, cultura vibrante y experiencias inolvidables. ¡No te lo pierdas!
             </p>
+
+            <Footer/>
+
         </div>
+        
     );
 }
 

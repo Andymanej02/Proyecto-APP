@@ -6,16 +6,17 @@ import userIcon from '../../assets/user.svg';
 import passwordIcon from '../../assets/password.svg';
 import logo from '../../components/Logo.png'; 
 
+
 export const LoginPage = () => {
     const backgroundStyle = {
         backgroundImage: `url(${fondoPantalla})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        backgroundPosition: 'center'
     };
 
     return (
-        <>
+        <div>
             <div className={style.main} style={backgroundStyle}>
                 <div className={style.cardmain}>
                     <div className={style.cardinfo}>
@@ -42,7 +43,8 @@ export const LoginPage = () => {
                     </div>
                 </div>
             </div>
-        </>
+
+        </div>
     )
 }
 

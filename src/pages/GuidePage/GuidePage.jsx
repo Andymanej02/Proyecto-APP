@@ -11,6 +11,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Footer from '../../components/Footer';
 
 const customStyles = {
     container: {
@@ -33,7 +34,7 @@ const customStyles = {
         marginBottom: "1rem",
     },
     section: {
-        padding: "4rem 0 0 0",
+        padding: "6rem 0 0 0",
         marginBottom: "2rem",
         textAlign: "center",
     },
@@ -195,6 +196,7 @@ export const GuidePage = () => {
                     </Accordion>
                 </div>
             </section>
+            <Footer/>
         </>
     );
 }
