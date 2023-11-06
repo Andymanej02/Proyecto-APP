@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './register.css'; // Importa el archivo CSS para los estilos de registro
 import logo from '../../components/Logo.png'; // Reemplaza con la ruta correcta de tu logo
+import background from '../../assets/camara.jpg'; // Ruta de tu imagen de fondo
 
 const RegisterPage = () => {
     return (
-        <div className="main">
+        <div className="main" style={{ backgroundImage: `url(${background})` }}>
             <div className="cardmain">
                 <div className="cardinfo">
                     <div className="logo">
