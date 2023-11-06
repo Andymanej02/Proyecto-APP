@@ -37,7 +37,7 @@ export const LoginPage = () => {
                             <input type="password" placeholder="Password" />
                         </div>
                         <button className={`${style.btn} ${style['btn-square']}`}>Login</button>
-                        {/* Agrega el enlace al botón de "Registrarse" */}
+                        
                         <Link to="/register" className={`${style['btn-register']} ${style['btn-square']}`}>Registrarse</Link>
                     </div>
                 </div>
