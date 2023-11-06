@@ -2,9 +2,9 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Indio from '../../assets/image6.jpeg';
-import Image1 from '../../assets/3.jpeg';
+import Image1 from '../../assets/1.jpeg';
 import Image2 from '../../assets/5.jpeg';
-import Image3 from '../../assets/1.jpeg';
+import Image3 from '../../assets/3.jpeg';
 import { DashboardNav } from '../../components/DashboardNav';
 
 
