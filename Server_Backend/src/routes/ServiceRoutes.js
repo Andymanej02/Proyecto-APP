@@ -1,14 +1,22 @@
-const express = require("express")
-const UsersController = require("../controllers/UsuariosController");
+const express = require('express');
+const router = express.Router();
 
-const api = express.Router();
+// Importa el controlador de servicios
+const servicesController = require('../controllers/servicesController');
 
-api.post("/usuarios/login", UsersController.login);
-api.post("/usuarios/create", UsersController.create);
-api.get("/usuarios/listar", UsersController.findAll);
-api.get("/usuarios/findbyid/:id", UsersController.findById);
-api.get("/usuarios/findusername/:username", UsersController.findOneUsuario);
-api.delete("/usuarios/delete/:id", UsersController.deleteUserData);
-api.put("/usuarios/update/:id", UsersController.updateUserData);
+// Ruta para obtener todos los servicios
+router.get('/services', servicesController.getAllServices);
 
-module.exports = api;
+// Ruta para obtener un servicio por ID
+router.get('/services/:id', servicesController.getServiceById);
+
+// Ruta para crear un nuevo servicio
+router.post('/services', servicesController.createService);
+
+// Ruta para actualizar un servicio por ID
+router.put('/services/:id', servicesController.updateService);
+
+// Ruta para eliminar un servicio por ID
+router.delete('/services/:id', servicesController.deleteService);
+
+module.exports = router;
