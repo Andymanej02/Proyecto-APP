@@ -1,4 +1,4 @@
-const Service = require('./servicesModel');
+const Service = require('./ServiciosModels');
 
 class ServiceRepository {
     async findAllServices() {

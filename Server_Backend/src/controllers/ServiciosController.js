@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const ServiceRepository = require('./servicesRepository');
+const ServiceRepository = require('./ServiciosRepository');
 
 // Ruta para obtener todos los servicios
 router.get('/', async (req, res) => {
     try {
-        const services = await ServiceRepository.findAllServices();
+        const services = await ServiciosRepository.findAllServices();
         res.json(services);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const serviceId = req.params.id;
-        const service = await ServiceRepository.findServiceById(serviceId);
+        const service = await ServiciosRepository.findServiceById(serviceId);
         res.json(service);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
         const serviceData = req.body;
-        const createdService = await ServiceRepository.createService(serviceData);
+        const createdService = await ServiciosRepository.createService(serviceData);
         res.status(201).json(createdService);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -39,7 +39,7 @@ router.put('/:id', async (req, res) => {
     try {
         const serviceId = req.params.id;
         const serviceData = req.body;
-        const updatedService = await ServiceRepository.updateService(serviceId, serviceData);
+        const updatedService = await ServiciosRepository.updateService(serviceId, serviceData);
         res.json(updatedService);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -50,7 +50,7 @@ router.put('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     try {
         const serviceId = req.params.id;
-        const deletedService = await ServiceRepository.deleteService(serviceId);
+        const deletedService = await ServiciosRepository.deleteService(serviceId);
         res.json(deletedService);
     } catch (error) {
         res.status(500).json({ error: error.message });
